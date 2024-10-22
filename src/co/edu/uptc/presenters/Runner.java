@@ -5,8 +5,8 @@ import co.edu.uptc.interfaces.PresenterInterface;
 import co.edu.uptc.interfaces.ViewInterface;
 import co.edu.uptc.models.modelv1.MainModelBasic;
 import co.edu.uptc.models.modelv2.MainModelAdvanced;
-import co.edu.uptc.views.viewMainV2.AdvancedMainView;
-import co.edu.uptc.views.viewv1.MainBasicView;
+import co.edu.uptc.views.mainViewV1.MainBasicView;
+import co.edu.uptc.views.mainViewV2.AdvancedMainView;
 
 public class Runner {
     private ViewInterface view;
@@ -21,7 +21,7 @@ public class Runner {
     }
 
     private void makeMVP(){
-         view = AdvancedMainView.getInstance();
+         view = new MainBasicView();
          presenter = new MainPresenter();
          model = new MainModelBasic();
   

@@ -1,4 +1,4 @@
-package co.edu.uptc.views.viewMainV2;
+package co.edu.uptc.views.mainViewV2;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -72,6 +72,13 @@ private static AdvancedMainView instance;
     @Override
     public void setResult(String value) {
         processView.setRestult(value);
+    }
+
+
+    @Override
+    public String getResourceLangage() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'getResourceLangage'");
     }
 
 

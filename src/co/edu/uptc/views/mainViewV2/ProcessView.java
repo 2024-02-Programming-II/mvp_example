@@ -1,4 +1,4 @@
-package co.edu.uptc.views.viewMainV2;
+package co.edu.uptc.views.mainViewV2;
 
 import java.awt.Dimension;
 import java.awt.FlowLayout;

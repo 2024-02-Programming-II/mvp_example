@@ -32,4 +32,6 @@ public class MainModelBasic implements ModelInterface {
        presenter.updateRestul(result);
     }
 
+
+
 }

@@ -1,8 +1,15 @@
+import java.util.Locale;
+
 import co.edu.uptc.presenters.Runner;
 
 public class App {
     public static void main(String[] args) throws Exception {
-        Runner runner = new Runner();
-        runner.start(); 
+ 
+
+       Locale.setDefault(new Locale("es", "CO"));
+      //  Locale.setDefault(new Locale("en", "US"));
+      
+         Runner runner = new Runner();
+         runner.start(); 
     }
 }
