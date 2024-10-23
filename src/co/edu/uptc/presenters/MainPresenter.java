@@ -28,7 +28,13 @@ public class MainPresenter implements PresenterInterface {
     @Override
     public void calculate(Long value) {
        model.setValue(value);
-       model.process();
+       try {
+           model.process();
+           
+       } catch ( ArithmeticException e) {         
+         view.showMessage(getLanguageMessage("model.divZero"));
+
+       } 
     }
 
     @Override

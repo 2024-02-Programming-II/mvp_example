@@ -24,13 +24,22 @@ public class MainModelBasic implements ModelInterface {
     }
 
     @Override
-    public void process() {
-        for (long i = 1; i <= value; i++) {
-            result = result.add(BigInteger.valueOf(i));
-        }
-
+    public void process() throws ArithmeticException {
+         Long aux = 2000L;
+         Long tmp = 0L;
+         tmp = aux/value;
+        result = BigInteger.valueOf(tmp);
+         
        presenter.updateRestul(result);
     }
+
+    // public void process() {
+    //     for (long i = 1; i <= value; i++) {
+    //         result = result.add(BigInteger.valueOf(i));
+    //     }
+
+    //    presenter.updateRestul(result);
+    // }
 
 
 

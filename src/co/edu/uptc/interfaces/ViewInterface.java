@@ -6,4 +6,6 @@ public interface ViewInterface {
     public String getResourceLangage();
 
     public void setResult(String value);
+
+    public void showMessage(String value);
 }

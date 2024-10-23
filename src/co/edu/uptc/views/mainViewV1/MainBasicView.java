@@ -17,6 +17,7 @@ import javax.swing.JButton;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
+import javax.swing.JOptionPane;
 
 public class MainBasicView extends JFrame implements ViewInterface {
     private final String RESOURCE_LANGAGE="resources.mainViewV1Message";
@@ -160,6 +161,11 @@ public class MainBasicView extends JFrame implements ViewInterface {
         btnSpanish.setText(presenter.getLanguageMessage("mainViewV1.MainBasicView.btnSpanish"));
         btnEnglish.setText(presenter.getLanguageMessage("mainViewV1.MainBasicView.btnEnglish"));
      }
+
+
+  public void showMessage(String value){
+      JOptionPane.showMessageDialog(null,value,"a",1);
+  }
 
 
 }
