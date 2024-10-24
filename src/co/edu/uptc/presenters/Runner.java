@@ -21,9 +21,10 @@ public class Runner {
     }
 
     private void makeMVP(){
-         view = new MainBasicView();
+         view = AdvancedMainView.getInstance();
          presenter = new MainPresenter();
-         model = new MainModelBasic();
+         model = new MainModelAdvanced();
+         //model = new MainModelBasic();
   
         view.setPresenter(presenter);
         model.setPresenter(presenter);

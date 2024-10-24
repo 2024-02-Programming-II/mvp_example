@@ -16,7 +16,7 @@ private ProcessView processView;
 private PresenterInterface presenter;
 
 private static AdvancedMainView instance; 
-
+private final String RESOURCE_LANGAGE="resources.mainViewV1Message";
     private AdvancedMainView() {
         setSize(600, 300);
         setLocationRelativeTo(null);
@@ -77,8 +77,13 @@ private static AdvancedMainView instance;
 
     @Override
     public String getResourceLangage() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'getResourceLangage'");
+        return RESOURCE_LANGAGE;
+    }
+
+
+    @Override
+    public void showMessage(String value) {
+        
     }
 
 

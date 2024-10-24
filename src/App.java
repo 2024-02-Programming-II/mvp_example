@@ -8,15 +8,9 @@ public class App {
  
 
      Locale.setDefault(new Locale("es", "CO"));
-   //  Locale.setDefault(new Locale("en", "US"));
-      
+  
           Runner runner = new Runner();
           runner.start(); 
-
-
-    // new ConfigManager();
-    // FileManager fileManager = new  FileManager();
-    // fileManager.write();
     
 
     }
