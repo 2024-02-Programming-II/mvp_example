@@ -74,6 +74,11 @@ private static AdvancedMainView instance;
         processView.setRestult(value);
     }
 
+    @Override
+    public void showMessage(String value) {
+
+    }
+
 
     @Override
     public String getResourceLangage() {
